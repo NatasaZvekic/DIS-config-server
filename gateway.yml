@@ -62,9 +62,3 @@ logging:
     org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator: INFO
     org.springframework.cloud.gateway: TRACE
 
----
-spring.config.activate.on-profile: docker
-
-app:
-  eureka-server: eureka
-  auth-server: auth-server
