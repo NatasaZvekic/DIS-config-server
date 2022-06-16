@@ -9,22 +9,6 @@ server.ssl:
   key-store-password: password
   key-alias: localhost
 
-app:
-  eureka-username: test
-  eureka-password: test
-  eureka-server: localhost
-  auth-server: localhost
-
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: "http://${app.eureka-username}:${app.eureka-password}@${app.eureka-server}:8761/eureka/"
-    initialInstanceInfoReplicationIntervalSeconds: 5
-    registryFetchIntervalSeconds: 5
-  instance:
-    leaseRenewalIntervalInSeconds: 5
-    leaseExpirationDurationInSeconds: 5
-
 spring.cloud.gateway.routes:
 
 - id: book-composite
