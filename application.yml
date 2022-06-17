@@ -26,6 +26,8 @@ spring.cloud.stream.kafka.binder:
 
 spring.cloud.stream.defaultBinder: rabbit
 
+spring.zipkin.sender.type: rabbit
+
 # WARNING: Exposing all management endpoints over http should only be used during development, must be locked down in production!
 management.endpoint.health.show-details: "ALWAYS"
 management.endpoints.web.exposure.include: "*"
