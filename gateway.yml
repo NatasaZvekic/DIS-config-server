@@ -37,6 +37,8 @@ spring.security.oauth2.resourceserver.jwt.issuer-uri: http://${app.auth-server}:
 management.endpoint.health.show-details: "ALWAYS"
 management.endpoints.web.exposure.include: "*"
 
+spring.sleuth.reactor.instrumentation-type: decorate-on-last
+
 logging:
   level:
     root: INFO
